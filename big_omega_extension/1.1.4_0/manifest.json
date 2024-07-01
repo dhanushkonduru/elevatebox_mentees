@@ -1,0 +1,28 @@
+{
+   "action": {
+      "default_icon": "logo128.png",
+      "default_title": "Big Ω - Enhance Leetcode, Hackerrank experience"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "big-omega-tools.css" ],
+      "js": [ "preinject.js", "big-omega-tools.js" ],
+      "matches": [ "https://leetcode.com/*", "http://leetcode.com/*", "https://www.leetcode.com/*", "http://www.leetcode.com/*" ]
+   } ],
+   "description": "Programming in community gives you wings!!",
+   "differential_fingerprint": "1.c31354473e4eba044ce0b297c0637c602f6c9c127aad27ed7f3d4d7d67485d94",
+   "icons": {
+      "128": "logo128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjf1QJkaXzurbq3j05UxF821RQS0k0hjICEqIAXCxJNKDAUCF6fqq0Zdfzc5mTQ3U1fCZ+VJIYGDTtuSkR7UvBeVWRXW+o4ZxOLhWUngXAE7w2Ro4bYd6xmJquTLbnSmn91vlNE9mCp59r9aexE+XrVEAgNZMXGxEl+1nF3cpoQXokTHhfUD7DpHudfCKGZw7DF96/a9/okkrTOF6vBlFtMUNcTwojBYh2LY78onqxxfVpznSKZMt0insPsFpKBGbcHnUKigw1BbHTPlKf4McMzaORUWKgv4UDDzqN0YVD15PJvI4EWcGFKfuT3IlWpYSr0Vgydaz/7eWCGjDrBshMwIDAQAB",
+   "manifest_version": 3,
+   "name": "Big Ω - Enhance Leetcode experience",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.4",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "build/*" ]
+   } ]
+}
