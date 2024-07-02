@@ -1,3 +1,0 @@
-Name	TMarks
-A	112
-B	145
